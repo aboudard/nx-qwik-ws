@@ -14,15 +14,23 @@ export default component$(() => {
       </div>
       <ul>
         <li>
-          <a
-            href="./todo"
-            target="_blank"
-          >
+          <a href="/todo"
+            target="_self">
             Todo
           </a>
         </li>
-
-        
+        <li>
+          <a href="/type"
+            target="_self">
+            Type
+          </a>
+        </li>
+        <li>
+          <a href="/context"
+            target="_self">
+            Context
+          </a>
+        </li>
       </ul>
     </header>
   );
