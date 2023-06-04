@@ -1,12 +1,18 @@
-import { qwikVite } from '@builder.io/qwik/optimizer';
 import { qwikCity } from '@builder.io/qwik-city/vite';
-import { defineConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import { qwikVite } from '@builder.io/qwik/optimizer';
 import { qwikNxVite } from 'qwik-nx/plugins';
+import { defineConfig } from 'vite';
+import jsonServer from 'vite-plugin-simple-json-server';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/apps/nx-qwik-app',
   plugins: [
+    jsonServer({
+      // Serve as /api
+      delay: 500,
+      mockDir: 'server'
+    }),
     qwikNxVite(),
     qwikCity(),
     qwikVite({

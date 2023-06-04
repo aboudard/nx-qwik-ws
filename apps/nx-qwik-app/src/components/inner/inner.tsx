@@ -1,7 +1,7 @@
 import { component$, useContext, useStylesScoped$ } from '@builder.io/qwik';
 
-import styles from './inner.scss?inline';
 import { meuhContextId } from '../../routes/context/meuh-context';
+import styles from './inner.scss?inline';
 
 export const Inner = component$(() => {
 

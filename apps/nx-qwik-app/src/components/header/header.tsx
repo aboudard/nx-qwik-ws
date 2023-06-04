@@ -31,6 +31,12 @@ export default component$(() => {
             Context
           </a>
         </li>
+        <li>
+          <a href="/ajax"
+            target="_self">
+            Ajax
+          </a>
+        </li>
       </ul>
     </header>
   );
